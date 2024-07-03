@@ -6,14 +6,14 @@
       <Menubar.Item class='w-full font-bebas text-xl antialiased tracking-wider'><span class="font-dosis text-2xl text-red-700">M</span>AIL.<span class="font-dosis text-2xl text-red-700">M</span>E</Menubar.Item>
     </Menubar.Menu>
     <Menubar.Menu >
-      <Menubar.Trigger class='font-dosis  text-lg'>
+      <Menubar.Trigger class='font-dosis  text-lg text-white'>
         <a data-sveltekit-preload-data="tap" href="/auth/signup">
         SignUp
       </a>
     </Menubar.Trigger>
     </Menubar.Menu>
     <Menubar.Menu >
-      <Menubar.Trigger class='font-dosis  text-lg'>
+      <Menubar.Trigger class='font-dosis  text-lg text-white'>
         <a data-sveltekit-preload-data="tap" href="/auth">
           SignIn
         </a>
