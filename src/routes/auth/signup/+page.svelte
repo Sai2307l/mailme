@@ -16,24 +16,25 @@
       <Card.Description>Enter your information to create an account</Card.Description>
     </Card.Header>
     <Card.Content>
+      <form method="post" action="?/register" >
       <div class="grid gap-4">
         <div class="grid grid-cols-2 gap-4">
           <div class="grid gap-2">
             <Label for="first-name">First name</Label>
-            <Input id="first-name" placeholder="Max" required />
+            <Input id="first-name" placeholder="Max" name="fname" required />
           </div>
           <div class="grid gap-2">
             <Label for="last-name">Last name</Label>
-            <Input id="last-name" placeholder="Robinson" required />
+            <Input id="last-name" placeholder="Robinson" name="lname" required />
           </div>
         </div>
         <div class="grid gap-2">
           <Label for="email">Email</Label>
-          <Input id="email" type="email" placeholder="m@example.com" required />
+          <Input id="email" type="email" placeholder="m@example.com" name="email" required />
         </div>
         <div class="grid gap-2">
           <Label for="password">Password</Label>
-          <Input id="password" type="password" />
+          <Input id="password" type="password" name="password" />
         </div>
         <Button type="submit" class="w-full">Create an account</Button>
         <Button variant="outline" class="w-full">Sign up with GitHub</Button>
@@ -42,6 +43,7 @@
         Already have an account?
         <a href="##" class="underline"> Sign in </a>
       </div>
+    </form>
     </Card.Content>
   </Card.Root>
 </div>
