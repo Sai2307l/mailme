@@ -1,10 +1,6 @@
 <script lang="ts">
 
     import Settings from "lucide-svelte/icons/settings";
-    import MoreMessage from "lucide-svelte/icons/message-circle-more";
-    import ReplyMessage from "lucide-svelte/icons/message-circle-reply";
-    import PlusMessage from "lucide-svelte/icons/message-circle-plus";
-    import SquareMessage from "lucide-svelte/icons/message-square-code";
     import Share from "lucide-svelte/icons/share";
     import Paperclip from "lucide-svelte/icons/paperclip";
     import Mic from "lucide-svelte/icons/mic";
@@ -19,9 +15,9 @@
     import * as Tooltip from "$lib/components/ui/tooltip/index.js";
     import { Navbar } from "$lib/navbar/navbar";
 
-    const data = [{name:"Business",disc:"Our fastest model for general use cases.",imag:MoreMessage},
-                  {name:"Invitation",disc:"Performance and speed for efficiency.",imag:SquareMessage},
-                  {name:"Job application",disc:"The most powerful model for complex computations",imag:PlusMessage}
+    const data = [{name:"Business",disc:"Our fastest model for general use cases."},
+                  {name:"Invitation",disc:"Performance and speed for efficiency."},
+                  {name:"Job application",disc:"The most powerful model for complex computations"}
     ]
     let to = $state('');
     let cc = $state('');
@@ -65,7 +61,7 @@
                         <Select.Value placeholder="Select a model" />
                       </Select.Trigger>
                       <Select.Content>
-                        {#each data as {name,disc,imag} }
+                        {#each data as {name,disc} }
                         <Select.Item value="genesis" label="Neural Genesis">
                           <div
                             class="flex items-start gap-3 text-muted-foreground"
@@ -82,21 +78,6 @@
                           </div>
                         </Select.Item>
                         {/each}
-                        <!-- <Select.Item value="explorer" label="Neural Explorer">
-                          <div
-                            class="flex items-start gap-3 text-muted-foreground"
-                          >
-                            <SquareMessage class="size-5" />
-                            <div class="grid gap-0.5">
-                              <p>
-                                Invitation
-                              </p>
-                              <p class="text-xs" data-description>
-                                Performance and speed for efficiency.
-                              </p>
-                            </div>
-                          </div>
-                        </Select.Item>   -->
                       </Select.Content>
                     </Select.Root>
                   </div>
@@ -147,7 +128,7 @@
                       <Select.Value placeholder="Select a model" />
                     </Select.Trigger>
                     <Select.Content>
-                      {#each data as {name,disc,imag} }
+                      {#each data as {name,disc} }
                       <Select.Item value="genesis">
                         <div class="flex items-start gap-3 text-muted-foreground">
                           <!-- <{imag} class="size-5" /> -->
@@ -162,19 +143,6 @@
                         </div>
                       </Select.Item>
                       {/each}
-                      <!-- <Select.Item value="explorer">
-                        <div class="flex items-start gap-3 text-muted-foreground">
-                          <PlusMessage class="size-5" />
-                          <div class="grid gap-0.5">
-                            <p>
-                              Invitation
-                            </p>
-                            <p class="text-xs" data-description>
-                              Performance and speed for efficiency.
-                            </p>
-                          </div>
-                        </div>
-                      </Select.Item> -->
                     </Select.Content>
                   </Select.Root>
                 </div>
