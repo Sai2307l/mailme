@@ -1,4 +1,11 @@
 <script lang="ts">
+
+  type propType={
+      header:string,
+      subject:string,
+      message:string,
+      footer:string
+  }
     
     import { Badge } from "$lib/components/ui/badge/index.js";
 
@@ -6,12 +13,7 @@
                   {name:"Invitation",disc:"Performance and speed for efficiency."},
                   {name:"Job application",disc:"The most powerful model for complex computations"}
     ]
-    let to = $state('');
-    let cc = $state('');
-    let header = $state('');
-    let footer = $state('');
-    let message = $state('');
-    let subject = $state('');
+    let {header,footer,message,subject}:propType = $props();
   </script>
 
 <div class="relative flex h-full min-h-[50vh] flex-col rounded-xl bg-muted/50 p-4 lg:col-span-2">

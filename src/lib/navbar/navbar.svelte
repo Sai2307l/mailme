@@ -9,7 +9,11 @@
     import * as Sheet from "$lib/components/ui/sheet/index.js";
     import { cn } from "$lib/utils"
 
-   let {nav_status = "Dashboard"} = $props();
+type navProp={
+  nav_status:string
+}
+
+   let {nav_status}:navProp = $props();
 </script>
 <!-- "transition-colors hover:text-foreground" + nav_status==="Dashboard"?"text-foreground":"text-muted-foreground" -->
 <header class="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
