@@ -25,6 +25,9 @@
       <a href="/mailer" class={cn("transition-colors hover:text-foreground",nav_status==="Mailer"?"text-foreground":"text-muted-foreground")} >
        Mailer
       </a>
+      <a href="/layouts" class={cn("transition-colors hover:text-foreground",nav_status==="Layouts"?"text-foreground":"text-muted-foreground")}>
+        Layouts
+      </a>
       <a href="/logs" class={cn("transition-colors hover:text-foreground",nav_status==="Logs"?"text-foreground":"text-muted-foreground")}>
         Logs
       </a>
@@ -55,6 +58,7 @@
           </a>
           <a href="/home" class={cn("hover:text-foreground",nav_status==="Dashboard"?"":"text-muted-foreground")} > Dashboard </a>
           <a href="/mailer" class={cn("hover:text-foreground",nav_status==="Mailer"?"":"text-muted-foreground")} > Mailer </a>
+          <a href="/layouts" class={cn("hover:text-foreground",nav_status==="Layouts"?"":"text-muted-foreground")} > Layouts </a>
           <a href="/logs" class={cn("hover:text-foreground",nav_status==="Logs"?"":"text-muted-foreground")} > Logs </a>
           <a href="/settings" class={cn("hover:text-foreground",nav_status==="Settings"?"":"text-muted-foreground")} > Settings </a>
           <a href="/about" class={cn("hover:text-foreground",nav_status==="About"?"":"text-muted-foreground")}> About</a>
