@@ -90,17 +90,6 @@
                     <Input id="top-p" type="email" placeholder="u.gmail.com" bind:value={cc}/>
                   </div>
                 </fieldset>
-                <fieldset class="grid gap-6 rounded-lg border p-4">
-                  <legend class="-ml-1 px-1 text-sm font-medium"> Messages </legend>
-                  <div class="grid gap-3">
-                    <Label for="content">Header</Label>
-                    <Textarea id="content" placeholder="Header is..." bind:value={header} />
-                  </div>
-                  <div class="grid gap-3">
-                    <Label for="content">Footer</Label>
-                    <Textarea id="content" placeholder="Footer is..." bind:value={footer}/>
-                  </div>
-                </fieldset>
               </form>
             </Drawer.Content>
           </Drawer.Root>
